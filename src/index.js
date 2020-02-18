@@ -1,12 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+import FilterableCardContainer from './components/filterable-card-container/FilterableCardContainer';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+const CARDS = [
+  { title: 'Каскадер выполнил что-то невообразимое!', category: 'video' },
+  { title: 'Test 2', category: 'text' },
+  { title: 'Test 3', category: 'image' },
+  { title: 'Test 4', category: 'video' },
+  { title: 'Test 5', category: 'text' },
+  { title: 'Test 6', category: 'image'} 
+];
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+const CATEGORIES = ['text', 'image', 'video', 'file'];
+
+ReactDOM.render(<FilterableCardContainer cards={CARDS} categories={CATEGORIES} />, document.getElementById('root'));

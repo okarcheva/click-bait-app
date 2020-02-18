@@ -1,0 +1,11 @@
+.category {
+  height: 50px;
+  width: 100px;
+  border: 1px solid #000;
+  border-radius: 10px;
+  margin-right: 10px;
+}
+
+.category__selected {
+  background-color: green;
+}
