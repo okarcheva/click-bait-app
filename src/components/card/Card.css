@@ -1,8 +1,50 @@
 .card {
   height: 200px;
   width: 200px;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+
   border: 1px solid #000;
-  border-radius: 20px;
+  border-radius: 10px;
   margin-right: 10px;
   margin-bottom: 10px;
+  padding: 10px;
+
+  cursor: pointer;
+}
+
+.card:hover {
+  border: 2px solid #7798B1;
+}
+
+.card_category {
+  text-align: right;
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-width : 320px) and (max-width : 767px) {
+  .card {
+    width: 300px;
+    height: 250px;
+    margin-right: 0;
+  }
+
+  .card_header {
+    font-size: 42px;
+  }
+
+  .card_category {
+    font-size: 24px;
+  }
+}
+
+/* Tablets (portrait and landscape) ----------- */
+@media only screen and (min-width : 768px) and (max-width : 1024px) {
+  .card {
+    width: 300px;
+    font-size: 24px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+  }
 }

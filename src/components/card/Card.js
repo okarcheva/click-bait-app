@@ -6,7 +6,10 @@ export default class Card extends React.Component {
     const card = this.props.card;
     return (
       <div className='card'>
-        <h1 className='card_header'>{card.title}</h1> 
+        <h1 
+          className='card_header truncate'
+          title={card.title}
+        >{card.title}</h1> 
         <div className='card_image'></div>
         <span className='card_category'>{card.category}</span>
       </div>

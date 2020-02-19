@@ -4,8 +4,48 @@
   border: 1px solid #000;
   border-radius: 10px;
   margin-right: 10px;
+  margin-bottom: 10px;
+  padding: 15px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.category:hover {
+  border: 2px solid #7798B1;
 }
 
 .category__selected {
-  background-color: green;
+  background-color: #0A4C7F;
+  color: #fff;
+}
+
+.category__selected:hover {
+  border: 2px solid #fff;
+} 
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-width : 320px) and (max-width : 767px) {
+  .category {
+    width: 150px;
+    font-size: 24px;
+    padding: 10px;
+  }
+}
+
+/* Tablets (portrait) ----------- */
+@media only screen and (min-width : 768px) and (max-width : 1024px) and (orientation: portrait) {
+  .category {
+    width: 200px;
+    font-size: 24px;
+    padding: 10px;
+  }
+}
+
+/* Tablets (landscape) ----------- */
+@media only screen and (min-width : 768px) and (max-width : 1024px) and (orientation: landscape) {
+  .category {
+    width: 300px;
+    font-size: 24px;
+    padding: 10px;
+  }
 }
