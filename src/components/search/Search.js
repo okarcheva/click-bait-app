@@ -18,7 +18,7 @@ export default class Search extends React.Component {
         <input 
           className='search_input' 
           type='text' 
-          placeholder='Search...'
+          placeholder='Search for a shock...'
           value={filterText}
           onChange={this.handleFilterTextChange} />
       </form>

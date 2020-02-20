@@ -1,41 +1,50 @@
 .category {
-  height: 50px;
+  height: 32px;
   width: 100px;
-  border: 1px solid #000;
-  border-radius: 10px;
+  border: 2px solid #F2F2F2;
+  border-radius: 8px;
   margin-right: 10px;
   margin-bottom: 10px;
-  padding: 15px;
+  padding: 4px;
+  background-color: #F2F2F2;
+  color: #828282;
   text-align: center;
   cursor: pointer;
 }
 
 .category:hover {
-  border: 2px solid #7798B1;
+  background-color: #E0E0E0;
+  border-color: #E0E0E0;
+  color: #828282;
 }
 
 .category__selected {
-  background-color: #0A4C7F;
-  color: #fff;
+  background-color: #0f4c81;
+  border-color: #0f4c81;
+  color: #F2F2F2;
 }
 
 .category__selected:hover {
-  border: 2px solid #fff;
-} 
+  background-color: #1361a4;
+  border-color: #1361a4;
+  color: #F2F2F2;
+}
 
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen and (min-width : 320px) and (max-width : 767px) {
   .category {
-    width: 150px;
+    height: 64px;
+    width: 200px;
     font-size: 24px;
-    padding: 10px;
+    padding: 14px;
   }
 }
 
 /* Tablets (portrait) ----------- */
 @media only screen and (min-width : 768px) and (max-width : 1024px) and (orientation: portrait) {
   .category {
-    width: 200px;
+    height: 56px;
+    width: 250px;
     font-size: 24px;
     padding: 10px;
   }
@@ -44,7 +53,8 @@
 /* Tablets (landscape) ----------- */
 @media only screen and (min-width : 768px) and (max-width : 1024px) and (orientation: landscape) {
   .category {
-    width: 300px;
+    height: 56px;
+    width: 250px;
     font-size: 24px;
     padding: 10px;
   }

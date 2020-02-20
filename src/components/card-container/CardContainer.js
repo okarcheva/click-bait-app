@@ -18,7 +18,14 @@ export default class CardContainer extends React.Component {
       });
 
     return (
-      <div className='card-container'>{mappedCards}</div>
+      <div className='card-container'>
+        <div className='card-container_cards'>
+          {mappedCards}
+        </div>
+        {mappedCards.length === 0 &&
+          <div className='card-container_placeholder'>Nothing Found</div>
+        }
+      </div>
     );
   }
 

@@ -10,7 +10,10 @@ export default class Card extends React.Component {
           className='card_header truncate'
           title={card.title}
         >{card.title}</h1> 
-        <div className='card_image'></div>
+        <img 
+          className='card_image'
+          src={card.imageLink} 
+          alt='Surprised cat'/>
         <span className='card_category'>{card.category}</span>
       </div>
     );

@@ -4,7 +4,7 @@ import './index.css';
 import FilterableCardContainer from './components/filterable-card-container/FilterableCardContainer';
 
 const CARDS = [
-  { title: 'Каскадер выполнил что-то невообразимое!', category: 'video' },
+  { title: 'Cat1', category: 'video', imageLink: 'images/Cat2.jpg' },
   { title: 'Test 2', category: 'text' },
   { title: 'Test 3', category: 'image' },
   { title: 'Test 4', category: 'video' },
