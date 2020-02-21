@@ -10,7 +10,7 @@ export default class Card extends React.Component {
           className='card_header truncate'
           title={card.title}
         >{card.title}</h1> 
-        <a href={card.sourceLink} target='_blank'>
+        <a href={card.sourceLink}>
           <img 
             className='card_image'
             src={card.imageLink} 
